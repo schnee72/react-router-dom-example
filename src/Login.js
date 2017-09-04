@@ -11,9 +11,9 @@ class Login extends Component {
   }
 
   handleSubmit = () => {
-    let route = '/compose';
-    if (this.state.name === '' || this.state.password === '')
-      route += '?false';
+    let route = '/home';
+    if (this.state.name !== '' && this.state.password !== '')
+      route += '?authenticated';
     this.props.history.push(route);
   };
 

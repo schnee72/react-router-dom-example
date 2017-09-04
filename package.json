@@ -11,7 +11,7 @@
     "open:dev": "babel-node tools/server.js",
     "lint": "esw webpack.config.* src tools --color",
     "lint:watch": "npm run lint -- --watch",
-    "clean-dist": "rimraf ./dist && mkdir dist",
+    "clean-dist": "rimraf ./docs && mkdir docs",
     "prebuild": "npm-run-all clean-dist lint",
     "build": "babel-node tools/build.js",
     "postbuild": "babel-node tools/distServer.js"

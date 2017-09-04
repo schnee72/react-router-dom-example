@@ -5,7 +5,7 @@ import chalk from 'chalk';
 
 process.env.NODE_ENV = 'production';
 
-console.log(chalk.blue('Generating minified bundle for production. This will take a moment...'));
+console.log(chalk.blue('Generating minified bundle for production...'));
 
 webpack(webpackConfig).run((err, stats) => {
   if (err) {
@@ -24,8 +24,7 @@ webpack(webpackConfig).run((err, stats) => {
     jsonStats.warnings.map(warning => console.log(chalk.yellow(warning)));
   }
 
-  console.log(chalk.magenta(`Webpack stats: ${stats}`));
-  console.log(chalk.green('Your app has been built for production and written to /dist...'));
+  console.log(chalk.green('Built and ready for production...'));
 
   return 0;
 });

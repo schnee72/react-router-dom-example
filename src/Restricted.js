@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 export default (BaseComponent) =>  {
-  class Protected extends Component {
+  class Restricted extends Component {
     componentWillMount() {
       this.authenticationCheck(this.props);
     }
@@ -13,18 +13,18 @@ export default (BaseComponent) =>  {
     }
 
     authenticationCheck(props) {
-      if (props.location.search !== '')
+      if (props.location.search !== '?authenticated')
         props.history.push('/');
     }
 
     render() {
-      return <BaseComponent {...this.props}/>;
+      return <BaseComponent {...this.props} />;
     }
   }
 
-  Protected.propTypes = {
+  Restricted.propTypes = {
     location: PropTypes.object.isRequired
   };
 
-  return Protected;
+  return Restricted;
 };
