@@ -14,7 +14,7 @@ This example shows how to use a HOC to wrap the Routes of components that requir
 ```
 <Route path="/home" component={restricted(Home)} />
 ```
-Another challenge I ran into was getting the fallback to a 404 page to work in my development environment using webpack-dev-middleware with express. The solution turned out to be using the connect-history-api-fallback middleware. The webpack-dev-server provides the middleware by default by setting the history-api-fallback property to true, but this shows how to get it working with express.
+Another challenge I ran into was getting the fallback to a 404 page to work in my development environment using webpack-dev-middleware with express. The solution turned out to be using the connect-history-api-fallback middleware. The webpack-dev-server provides the middleware by default by setting the history-api-fallback property to true, but this shows how to get it working with webpack and express.
 ```
 import historyApiFallback from 'connect-history-api-fallback';
 app.use(historyApiFallback());
