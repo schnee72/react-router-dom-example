@@ -20,7 +20,7 @@ export default {
   target: 'web',
   output: {
     path: path.resolve(__dirname, 'docs'),
-    publicPath: './',
+    publicPath: './react-router-dom-example/',
     filename: '[name].[chunkhash].js'
   },
   plugins: [
