@@ -19,8 +19,8 @@ export default {
   },
   target: 'web',
   output: {
-    path: path.resolve(__dirname, 'docs'),
-    publicPath: './react-router-dom-example/',
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: './',
     filename: '[name].[chunkhash].js'
   },
   plugins: [
