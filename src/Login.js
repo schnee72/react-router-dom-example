@@ -20,7 +20,6 @@ class Login extends Component {
   handleNameChange = (e) => this.setState({ name: e.target.value });
 
   handlePasswordChange = (e) => this.setState({ password: e.target.value });
-<<<<<<< HEAD
 
   handleKeyDown = (e) => {
     if (e.key === 'Enter') {
@@ -28,8 +27,6 @@ class Login extends Component {
       this.handleSubmit();
     }
   };
-=======
->>>>>>> acac99852c38ec9305cf8211303173f415e33f03
 
   render() {
     return (
