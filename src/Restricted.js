@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-export default (BaseComponent) =>  {
+export default (BaseComponent) => {
   class Restricted extends Component {
     componentWillMount() {
       this.authenticationCheck(this.props);

@@ -18,7 +18,7 @@ const App = () => (
         <Link to="/about">About</Link>
         {' '}
         <Link to="/">Login</Link>
-        { ' ' }
+        {' '}
         <strong>react-router-dom-example</strong>
       </header>
       <main>
