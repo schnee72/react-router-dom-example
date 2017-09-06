@@ -17,9 +17,9 @@ class Login extends Component {
     this.props.history.push(route);
   };
 
-  handleNameChange = (e) => this.setState({name: e.target.value});
+  handleNameChange = (e) => this.setState({ name: e.target.value });
 
-  handlePasswordChange = (e) => this.setState({password: e.target.value});
+  handlePasswordChange = (e) => this.setState({ password: e.target.value });
 
   render() {
     return (
