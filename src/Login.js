@@ -17,9 +17,16 @@ class Login extends Component {
     this.props.history.push(route);
   };
 
-  handleNameChange = (e) => this.setState({name: e.target.value});
+  handleNameChange = (e) => this.setState({ name: e.target.value });
 
-  handlePasswordChange = (e) => this.setState({password: e.target.value});
+  handlePasswordChange = (e) => this.setState({ password: e.target.value });
+
+  handleKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      this.handleSubmit();
+    }
+  };
 
   render() {
     return (
@@ -28,7 +35,10 @@ class Login extends Component {
         <p>Name</p>
         <input onChange={this.handleNameChange} />
         <p>Password</p>
-        <input type="password" onChange={this.handlePasswordChange} />
+        <input
+          type="password"
+          onChange={this.handlePasswordChange}
+          onKeyDown={this.handleKeyDown} />
         <p>
           <button onClick={this.handleSubmit}>Submit</button>
         </p>
