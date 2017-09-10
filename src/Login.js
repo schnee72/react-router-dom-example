@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-class Login extends Component {
+export default class Login extends Component {
   constructor() {
     super();
     this.state = {
@@ -50,5 +50,3 @@ class Login extends Component {
 Login.propTypes = {
   history: PropTypes.object.isRequired
 };
-
-export default Login;
