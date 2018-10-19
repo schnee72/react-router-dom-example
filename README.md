@@ -7,7 +7,7 @@ npm start
 npm run build
 ```
 
-Demo: https://rrdex.azureedge.net/
+Demo: https://react-router-dom-example.firebaseapp.com/
 
 One issue that seems common with react-router v4 is the removal of browserHistory. There are several ways to accomplish changing routes from a handler. The way that I found to be the easiest is to use the BrowserRouter which includes the history object in the props passed to the component. Then it is as easy as pushing the new route onto the history. I did not find it necessary to utilize withRouter as some sources suggest.
 ```
