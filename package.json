@@ -17,7 +17,7 @@
     "postbuild": "babel-node tools/distServer.js"
   },
   "dependencies": {
-    "react": "^15.6.1",
+    "react": "^16.13.1",
     "react-dom": "^15.6.1",
     "react-router-dom": "^5.2.0"
   },
